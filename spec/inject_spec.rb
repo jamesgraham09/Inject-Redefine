@@ -4,6 +4,9 @@ require './lib/inject'
 
 describe "Array#james_ject" do
 
+	# a good test suite but it's incomplete
+	# Your code won't work if the argument is anything but 1 for multiplication
+
 	it "can calculate a moving sum from an array of numbers" do
 		expect((5..10).to_a.james_ject { |sum, n| sum + n }).to eq(45)
 			# using reduce (5..10).reduce(:+) #=> 45
